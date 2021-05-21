@@ -106,7 +106,7 @@ export default class Nav extends Component {
                  </div>  
                  <div>
                    <div>
-                     <p style={{color:'#666666'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Welcome,</span> {this.state.userData.email}</h3></p> 
+                     <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Welcome,</span> {this.state.userData.email}</h3></p> 
                    </div>
                  
                    <div>
@@ -118,7 +118,14 @@ export default class Nav extends Component {
                          
                          Your Average : {ok[ok.length-1].toFixed(2)}%
                          </h3>
-                      : 'You havent taken a test yet':
+                      : 
+                      
+                      
+                      <h3 style={{margin:'13px 0 0 0',color:'grey',fontWeight:'400'}}>
+                        You have Not Taken a Test Yet
+                      </h3>
+                      
+                      :
                        null } 
 
                      {console.log(this.state.userData,'usr data')}
@@ -216,7 +223,7 @@ export default class Nav extends Component {
                 >
                
                 <span className='winnermenu' 
-                      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3>My Teachers...</h3> </span>  
+                      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3>My Teachers</h3> </span>  
                       
               </Menu.Item> : 
               <Menu.Item
@@ -257,9 +264,30 @@ export default class Nav extends Component {
                       
               </Menu.Item> : null} */}
 
+{this.state.userData.isStudent?
+null:
+<Menu.Item
+as={Link}
+to="/mystudents"
+name='mystudents'
+active={activeItem === 'mystudents'}
+onClick={this.handleItemClick}
+onClick={this.props.noDisplay}
 
 
-              {this.state.userData.isStudent  ? <Menu.Item
+>
+
+<span className='winnermenu' 
+      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}><h3>My Students</h3>  </span>  
+      
+</Menu.Item> }
+
+
+
+{/* 
+              {this.state.userData.isStudent  ? 
+              
+              <Menu.Item
                 as={Link}
                 to="/grades"
                 name='grades'
@@ -273,7 +301,9 @@ export default class Nav extends Component {
                 <span className='winnermenu' 
                       style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}><h3>Grades</h3>  </span>  
                       
-              </Menu.Item> : 
+              </Menu.Item> 
+              
+              : 
 
                <Menu.Item
                as={Link}
@@ -292,7 +322,7 @@ export default class Nav extends Component {
              </Menu.Item> 
               
               
-              }
+              } */}
 
 
  {this.props.authenticated ? <Menu.Item

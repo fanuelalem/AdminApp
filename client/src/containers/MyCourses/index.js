@@ -75,8 +75,8 @@ let a = response.data.myCourses.filter(function (a) {
              <div style={{margin:'50px 40px 0 0'}}>
  <div style={{textAlign:"center"}}>
 <h1>
-  Courses
-     </h1>
+My Courses     </h1>
+<hr></hr>
     </div>
 
 
@@ -121,8 +121,8 @@ to={item.route}
  to={item.route}
  >
    <Button color='linkedin'> take Exam</Button>
- </Link>:null
-}
+ </Link>:
+null}
      
 </div>
 
@@ -130,7 +130,7 @@ to={item.route}
   </Card>  
 
         </div>
-      )):'You Do Not Have Any Classes Yet'}
+      )):<p> you do not have any classes yey</p>}
 
             </div>
             </Container>

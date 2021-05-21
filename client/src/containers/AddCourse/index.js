@@ -35,7 +35,7 @@ addCourse = () =>{
              <div style={{margin:'50px 40px 0 0'}}>
  <div style={{textAlign:"center"}}>
 <h1>
-  Register
+  Add a Course to your curriculum 
      </h1>
     </div>
 

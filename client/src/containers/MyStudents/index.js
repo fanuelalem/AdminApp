@@ -78,11 +78,15 @@ componentDidMount = () => {
         return (
 
             
-            <div >
+            <div style={{margin:'40px 0 0 0'}} >
  
-
+ <div style={{textAlign:"center"}}>
+<h1>
+  My Students
+     </h1>
+    </div>
  
-
+<hr></hr>
   
            
                    {<h2>
@@ -132,7 +136,7 @@ componentDidMount = () => {
                                        
                                       : null}</h2>}
                                   </div>)
-                              }):null}
+                              }):'fvfvfvf'}
 
 
 

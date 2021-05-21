@@ -36,7 +36,7 @@ Run 'npm start' inside your root terminal.
 
 ## Deployed Link
 
-* [See Live Site](https://thawing-bastion-89215.herokuapp.com/)
+* [See Live Site](https://carnatakehomeproject.herokuapp.com/)
 
 
 ## Authors
@@ -48,7 +48,7 @@ Fanuel Alem
 - [Link to Github](https://github.com/fanuelalem/basic-portfolio-new)
 - [Link to LinkedIn](https://www.linkedin.com/in/fanuel-alem-12991b32/)
 
-See also the list of [contributors](https://github.com/fanuelalem/Project-3/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/fanuelalem/CarnaApp/graphs/contributors) who participated in this project(me).
 
 ## License
 

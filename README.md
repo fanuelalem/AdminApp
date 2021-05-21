@@ -1,11 +1,12 @@
-# 10/10 stock tracker
+# Carna Take Home Project
 
-Add stocks to your watchList with the 10/10 stock tracking app. It will give users insight on top 10 daily stock gainers and losers, Allow you to search for any stock in the market, as well as share and connect with a community. 
+
+Choose to be either an admin/teacher to assign courses and keep track of your students grades, or enroll to a teacher's curriculum and take their exams. 
 
 
 ## Motivation
 
-Our motivation when building this application was to provide users with informative insight on the stock market, and to encourage people from all backgrounds to become an informed investor. Our group focused on creating an inviting atmosphere for people unfamiliar with the stock market.
+My motivation in building the project was to make an exceptional academic platform that was helpful to manage teacher students and easy to use. My goal was to meet the standards required of providing a positive experience in learning
 
 
 ## Installation 
@@ -16,18 +17,11 @@ To install all necessary dependencies, open the terminal inside youre root folde
 
 Run 'npm start' inside your root terminal.
 
-
 ## App Tutorial
 
-View the top 10 stock Market daily winners and losers, and lookup any stock.
-Open the winners or losers tab to check the daily stock market winners and losers. In the search bar, you can search stocks by their ticker to find extra information and details about the company.
-![Project Image](topgainers.png)
+ When you signin/signup as a teacher, you will be given options of courses that you can add to your curruculum where your students will stay updated on. When you sign in/signup as a student, you will be given options of available teachers with the courses of your preference. Take an exam and improve your over all grade. 
+![Project Image](frontpage.png)
  
-Create your personal stocks watchlist and join the 10/10 stock community to view trends.
-You can also enter stocks onto the watchlist to manage and keep track of your favorite stocks. The community tab will allow you to view popular stocks among other users.
-![Project Image](watchL.png)
- 
-
 
 ## Technologies
 
@@ -47,7 +41,7 @@ You can also enter stocks onto the watchlist to manage and keep track of your fa
 
 ## Authors
 
-Fanuel Alem, Ganesh nimavat, HusamAhalim, Vanessa Emerick,
+Fanuel Alem
 
 
 - [Link to Portfolio Site](https://fanuel-react-app.herokuapp.com/)

@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Form, Segment, Button,Container,Grid ,Image,Header,Icon} from 'semantic-ui-react';
 import { email, length, required } from 'redux-form-validators';
-import logo from './../../components/Images/Logo.png'
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import fanuel from './../../components/Images/fanuel.jpg'
-import ganesh from './../../components/Images/ganesh.png'
-import vanessa from './../../components/Images/vanessa.jpeg'
-import husam from './../../components/Images/husam.jpeg'
+
 import './../../index.css'
 
 

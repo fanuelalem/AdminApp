@@ -4,9 +4,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Segment,Form,Dropdown,Grid, Input, Menu, Container, Icon, Image, Button, MenuItem,Label } from 'semantic-ui-react'
 import './../../index.css'
-import logo from './../Images/Logo.png'
  import axios from 'axios'
- import admin from './../Images/admin.png'
+//  import admin from './../Images/admin.png'
  import student from './../Images/2.png'
  import adminavi from './../Images/adminavi.png'
 

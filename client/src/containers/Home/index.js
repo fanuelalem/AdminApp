@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Container,Header,Image,Segment,Grid,Button,Divider,Form,Icon } from 'semantic-ui-react'
 import './../../index.css'
-import logo from './../../components/Images/Logo.png'
  import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

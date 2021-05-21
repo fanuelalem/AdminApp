@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import { Field, reduxForm, SubmissionError } from 'redux-form';
 import { Form, Segment, Button,Container,Image,Header,Grid,Message,Icon } from 'semantic-ui-react';
-import logo from './../../components/Images/Logo.png'
 import { email, required } from 'redux-form-validators';
 import axios from 'axios';
 import { AUTH_USER} from '../../actions/types';
 import './../../index.css'
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import fanuel from './../../components/Images/fanuel.jpg'
-import ganesh from './../../components/Images/ganesh.png'
-import vanessa from './../../components/Images/vanessa.jpeg'
-import husam from './../../components/Images/husam.jpeg'
+
 import './../../index.css'
 
 

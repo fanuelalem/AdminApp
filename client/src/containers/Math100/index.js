@@ -157,92 +157,36 @@ export default class Math110 extends Component {
   
                   <form  name="quizForm" onSubmit={this.submitAnswers}>
                       <div style={{display:'flex',justifyContent:'center',margin:"45px 0 20px 0"}}>
-                      <Card style={{width:"550px",padding:"30px 30px 30px 30px"}}>
+                      <Card style={{width:"550px",padding:"30px 0 30px 0"}}>
 
-<div>
+<div><h2 style={{margin:" 0 0 20px 0"}}>question 2</h2>
+</div>       
 
-<h2 style={{margin:" 0 0 20px 0"}}>question 1</h2></div>
-
-<div className="jumbotron jumbotron-fluid">
-<div style={{textAlign:'center'}} className="container">
-<div className="form-check form-check-inline center">
 
 <Grid>
-<Grid.Row columns={6}>
+      <Grid.Row columns={5}>
 <Grid.Column>
 <div >
-<input style={{visibility:"hidden"}} className="form-check input" id="q1a"value="a" name="q1"type="radio"  ></input>
-<div className='a' style={{backgroundColor:'#e3e6ea',padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label for='q1a'>0</label>
- </div>
- 
-
-</div>
-</Grid.Column>
-<Grid.Column>
-<div className="form-check">
-<input style={{visibility:"hidden"}} className="form-check input" id="q1b"value="b" name="q1"type="radio"></input>
-<div className='a' style={{backgroundColor:'#e3e6ea',padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label for='q1b'>44</label>
-</div>
- 
-
-<br></br>
-</div>      
-</Grid.Column>
-<Grid.Column>
-<div className="form-check">
-<input style={{visibility:"hidden"}} className="form-check input" id="q1c"value="c" name="q1"type="radio"></input>
-<div className='a' style={{backgroundColor:"#e3e6ea",padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label for='q1c'>23</label>
-</div>
- 
-
-<br></br>
+<input className="form-check input" id="q1a"value="a" name="q1"type="radio"></input>1 
 </div>      </Grid.Column>
 <Grid.Column>
 <div className="form-check">
-<input style={{visibility:"hidden"}} className="form-check input" id="q1d"value="d" name="q1"type="radio"></input>
-<div className='a' style={{backgroundColor:"#e3e6ea",padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label for='q1d'>23</label>
-
-</div>
- 
- <br></br>
+<input className="form-check input" id="q1b"value="b" name="q1"type="radio"></input>2<br></br>
 </div>      </Grid.Column>
 <Grid.Column>
 <div className="form-check">
-<input style={{visibility:"hidden"}} className="form-check input" id="q1e"value="e" name="q1"type="radio"></input>
-<div className='a' style={{backgroundColor:"#e3e6ea",padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label for='q1e'>32</label>
-
-</div>
- 
- <br></br>
+<input className="form-check input" id="q1c"value="c" name="q1"type="radio"></input>3 <br></br>
 </div>      </Grid.Column>
 <Grid.Column>
 <div className="form-check">
-<input style={{visibility:"hidden"}} className="form-check input" id="q1f"value="f" name="q1"type="radio"></input>
-<div className='a' style={{backgroundColor:"#e3e6ea",padding:'5px 10px 5px 10px',borderRadius:'5px'}}>
-<label  for='q1f'>3</label>
-
-</div>
- </div>   
-
-
-</Grid.Column>
+<input className="form-check input" id="q1d"value="d" name="q1"type="radio"></input>4 <br></br>
+</div>      </Grid.Column>
+<Grid.Column>
+<div className="form-check">
+<input className="form-check input" id="q1e"value="e" name="q1"type="radio"></input>5 
+</div>      </Grid.Column>
 </Grid.Row>
 </Grid>
-
-
-
-
-
-
-
-</div>
-</div>
-</div>
 </Card>
                       </div>
 

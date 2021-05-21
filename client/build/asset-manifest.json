@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a18c7b93.chunk.css",
+    "main.js": "/static/js/main.9511c7fd.chunk.js",
+    "main.js.map": "/static/js/main.9511c7fd.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.2ce93ba3.chunk.css": "/static/css/2.2ce93ba3.chunk.css",
+    "static/js/2.2f34d660.chunk.js": "/static/js/2.2f34d660.chunk.js",
+    "static/js/2.2f34d660.chunk.js.map": "/static/js/2.2f34d660.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.db20f75621052eef328dfb57f19a996c.js": "/precache-manifest.db20f75621052eef328dfb57f19a996c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.2ce93ba3.chunk.css.map": "/static/css/2.2ce93ba3.chunk.css.map",
+    "static/css/main.a18c7b93.chunk.css.map": "/static/css/main.a18c7b93.chunk.css.map",
+    "static/media/Logo.png": "/static/media/Logo.03d92702.png",
+    "static/media/UploadIcon.svg": "/static/media/UploadIcon.1cedb6e9.svg",
+    "static/media/fanuel.jpg": "/static/media/fanuel.a834f2d6.jpg",
+    "static/media/ganesh.png": "/static/media/ganesh.ea300a57.png",
+    "static/media/husam.jpeg": "/static/media/husam.9d785c88.jpeg",
+    "static/media/topgainers.png": "/static/media/topgainers.929b8b02.png",
+    "static/media/vanessa.jpeg": "/static/media/vanessa.e251d88a.jpeg",
+    "static/media/watchlist.png": "/static/media/watchlist.29a4fd79.png"
+  }
+}

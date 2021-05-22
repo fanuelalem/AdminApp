@@ -173,8 +173,9 @@ state={
  
  
  <Container>
-
-  <div style={{backgroundColor:'#242e4c',margin:"60px 0 0 0",borderRadius:'10px'}}>
+<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Intro To Mathematics</h1>
+<h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
+  <div style={{backgroundColor:'#242e4c',margin:"40px 0 0 0",borderRadius:'10px'}}>
  
 <Grid>
     <Grid.Row>

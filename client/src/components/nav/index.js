@@ -108,13 +108,17 @@ export default class Nav extends Component {
                    <div>
                      <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Welcome,</span> {this.state.userData.email}</h3></p> 
                    </div>
+                   <div style={{margin:'9px 0 0 0'}}>
+                     <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Id #:</span> {this.state.userData._id?this.state.userData._id.substring(0,8):null}</h3></p> 
+                   
+                   </div>
                  
                    <div>
                         
                        {
                        this.state.userData.isStudent?
                        ok[ok.length-1]? 
-                       <h3 style={{backgroundColor:'lightgreen',color:'#284052',margin:'15px 0 15px 0',padding:'5px',fontWeight:'400'}}>
+                       <h3 style={{backgroundColor:'#96acd0',color:'#284052',borderRadius:'9px',margin:'15px 0 15px 0',padding:'15px',fontWeight:'400'}}>
                          
                          Your Average : {ok[ok.length-1].toFixed(2)}%
                          </h3>
@@ -284,7 +288,7 @@ onClick={this.props.noDisplay}
       
 </Menu.Item> }
 
-{this.state.userData.isStudent?
+{/* {this.state.userData.isStudent?
   <Menu.Item
 as={Link}
 to="/quiz"
@@ -300,7 +304,7 @@ onClick={this.props.noDisplay}
       style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}><h3>Quiz</h3>  </span>  
       
 </Menu.Item> : null
- }
+ } */}
 
 
 

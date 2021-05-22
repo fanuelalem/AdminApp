@@ -128,6 +128,8 @@ export default class Nav extends Component {
                       :
                        null } 
 
+
+
                      {console.log(this.state.userData,'usr data')}
                     
                    </div>
@@ -281,6 +283,24 @@ onClick={this.props.noDisplay}
       style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}><h3>My Students</h3>  </span>  
       
 </Menu.Item> }
+
+{this.state.userData.isStudent?
+  <Menu.Item
+as={Link}
+to="/quiz"
+name='quiz'
+active={activeItem === 'mystudents'}
+onClick={this.handleItemClick}
+onClick={this.props.noDisplay}
+
+
+>
+
+<span className='winnermenu' 
+      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}><h3>Quiz</h3>  </span>  
+      
+</Menu.Item> : null
+ }
 
 
 

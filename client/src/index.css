@@ -16,7 +16,14 @@
     border: 0;
     border-top: 1px solid #eee;
 }
-
+.xo:hover{
+    background-color: #545e81;
+}
+.xo{
+    background-Color:#242e4c;
+    cursor: pointer;
+    border-radius: 8px;
+}
 .search-container{
     text-align:center;
         padding-top:10px;

@@ -9,7 +9,7 @@ import SignIn from '../SignIn';
 // import TeacherSignOut from './../AdminSignOut'
 import Nav from './../../components/nav'
  import ScrollToTop from './../../components/scrolltop/index'
-  
+  import Quiz from './../../containers/Quiz'
 import './../../index.css'
 import { connect } from 'react-redux';
  
@@ -111,6 +111,7 @@ this.props.authenticated?
 
        <Route exact path='/teacherdashboard' component={TeacherDashBoard} />
 
+       <Route exact path='/quiz' component={Quiz} />
 
 
    
@@ -177,6 +178,7 @@ this.props.authenticated?
 
     <Route exact path='/teacherdashboard' component={TeacherDashBoard} />
 
+    <Route exact path='/quiz' component={Quiz} />
 
 
 

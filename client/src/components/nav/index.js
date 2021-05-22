@@ -109,8 +109,11 @@ export default class Nav extends Component {
                      <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Welcome,</span> {this.state.userData.email}</h3></p> 
                    </div>
                    <div style={{margin:'9px 0 0 0'}}>
-                     <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Id #:</span> {this.state.userData._id?this.state.userData._id.substring(0,8):null}</h3></p> 
-                   
+                     {this.state.userData.isStudent?
+                                          <p style={{color:'black'}}> <h3> <span style={{color:"grey",fontWeight:"300"}}> Id #:</span> {this.state.userData._id?this.state.userData._id.substring(0,8):null}</h3></p> 
+:null
+                    }
+                    
                    </div>
                  
                    <div>

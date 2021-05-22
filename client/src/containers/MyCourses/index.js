@@ -72,12 +72,19 @@ let a = response.data.myCourses.filter(function (a) {
         return (
             <Container>
 
+<style>{'body { background-color:#edf0f3}'}</style>
+
+
              <div style={{margin:'50px 40px 0 0'}}>
- <div style={{textAlign:"center"}}>
-<h1>
-My Courses     </h1>
-<hr></hr>
-    </div>
+ 
+ 
+ <div>
+ <h1 style={{margin:'30px 0 0 0',fontSize:'35px',fontWeight:'bolder'}}> Teacher Dashboard</h1>
+ <hr></hr>
+
+ <h2 style={{margin:'9px 0 30px 0',fontWeight:'300'}}> My Courses</h2>
+
+  </div>
 
 
 
@@ -89,7 +96,7 @@ My Courses     </h1>
     {this.state.myuserCourses? this.state.myuserCourses.map((item)=>(
         <div >
 
-           <Card style={{width:"345px",height:"250px",float:'left',margin:'10px 15px 0 0'}}>
+           <Card style={{width:"345px",height:"250px",float:'left',margin:'10px 15px 0 0',background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
 <div style={{textAlign:"center",margin:'15px 0 0 0'}}>
 
 <Button style={{margin:"20px 0 0 0"}}color='red' onClick={()=>{
@@ -102,7 +109,7 @@ My Courses     </h1>
    
 </Button>
 
-<h2 style={{margin:'40px 0 0 0'}}> <h2> {item.subject}</h2></h2> 
+<h2 style={{margin:'40px 0 0 0',fontWeight:'400'}}> {item.subject}</h2> 
 {/* <h2 style={{margin:'40px 0 0 0'}}> <h2> {item.subject}</h2></h2>  */}
 
 {/* <Link

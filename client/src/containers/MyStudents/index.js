@@ -77,16 +77,19 @@ componentDidMount = () => {
 
         return (
 
-            
-            <div style={{margin:'40px 0 0 0'}} >
+            <Container>
+
+             <div style={{margin:'50px 0 0 0'}} >
  
- <div style={{textAlign:"center"}}>
-<h1>
-  My Students
-     </h1>
-    </div>
+ <div>
+ <h1 style={{margin:'30px 0 0 0',fontSize:'35px',fontWeight:'bolder'}}> Teacher Dashboard</h1>
+ <hr></hr>
+
+ <h2 style={{margin:'9px 0 30px 0',fontWeight:'300'}}> My Students </h2>
+
+  </div>
  
-<hr></hr>
+ 
   
            
                    {<h2>
@@ -146,6 +149,8 @@ componentDidMount = () => {
                        </h2>}
               
             </div>
+            </Container>
+
         )
     }
 }

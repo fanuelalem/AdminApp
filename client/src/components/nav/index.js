@@ -176,7 +176,7 @@ export default class Nav extends Component {
               >
              
               <span className='winnermenu' 
-                    style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3> Pick Teacher</h3> </span>  
+                    style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3> Register</h3> </span>  
                     
             </Menu.Item>:
             
@@ -232,7 +232,7 @@ export default class Nav extends Component {
                 >
                
                 <span className='winnermenu' 
-                      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3>My Teachers</h3> </span>  
+                      style={{ color: '#494949',fontSize:'18px',margin:"0 0 0 0" }}> <h3>My Classes</h3> </span>  
                       
               </Menu.Item> : 
               <Menu.Item

@@ -91,7 +91,8 @@ console.log(findanemail,'is this real teacher object?')
 return (
              <div style={{margin:'30px 0 0 0'}}>
 
-                
+<style>{'body { background-color:#edf0f3}'}</style>
+
 
                  <Grid divided='vertically'>
     <Grid.Row >

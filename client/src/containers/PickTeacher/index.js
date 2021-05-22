@@ -115,11 +115,12 @@ componentDidMount() {
         return (
             
 <Container>
+<style>{'body { background-color:#edf0f3}'}</style>
 
 <div style={{margin:'50px 40px 0 0'}}>
 <div  >
 <h1 style={{margin:" 0 0 20px 0"}}>
-Pick a Teacher
+Enroll
 </h1>
 </div>
 

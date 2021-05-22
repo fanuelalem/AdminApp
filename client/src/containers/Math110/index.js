@@ -18,54 +18,51 @@ state={
 }
     Questions = [
         {
-            questionText:'what is 1 plus 1',
+            questionText:'If we minus 712 from 1500, how much do we get?',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'788',isCorrect:true},
+                {answerText:'778',isCorrect:false},
+                {answerText:'768',isCorrect:false},
+                {answerText:'758',isCorrect:false},
+             ]
+
+        },
+        {
+            questionText:'What is the sum of 130+125+191?',
+            answerOptions:[
+                {answerText:'343',isCorrect:false},
+                {answerText:'233',isCorrect:false},
+                {answerText:'322',isCorrect:false},
+                {answerText:'212',isCorrect:false},
+                {answerText:'446',isCorrect:true}
             ]
 
         },
         {
-            questionText:'what is 2 plus 2',
+            questionText:'50 times of 8 is equal to:',
             answerOptions:[
-                {answerText:'4',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'3',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'2',isCorrect:false}
+                {answerText:'80',isCorrect:false},
+                {answerText:'400',isCorrect:true},
+                {answerText:'800',isCorrect:false},
+                {answerText:'4000',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'110 divided by 10 is:',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'11',isCorrect:true},
+                {answerText:'10',isCorrect:false},
+                {answerText:'5',isCorrect:false},
+                {answerText:'None Of These',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'20+(90÷2) is equal to:',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
-            ]
-
-        },
-        {
-            questionText:'what is 1 plus 1',
-            answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
+                {answerText:'65',isCorrect:true},
+                {answerText:'25',isCorrect:false},
                 {answerText:'23',isCorrect:false},
                 {answerText:'22',isCorrect:false},
                 {answerText:'12',isCorrect:false}
@@ -187,7 +184,7 @@ state={
       </Grid.Column>
       <Grid.Column width={8} style={{paddingRight:'65px',paddingTop:'30px',paddingBottom:'30px'}}>
       <div>  
-{this.Questions[0].answerOptions.map((l)=>(<h2>
+{this.Questions[this.state.currentQuestion].answerOptions.map((l)=>(<h2>
   <button className='xo' style={{width:'100%',textAlign:'left',border:'solid 4px #076a8a',fontWeight:'300',padding:'10px 0 10px 15px'}}
    onClick={()=>this.handleNext(l.isCorrect)}>
         <span style={{color:'white'}}> {l.answerText}</span> 

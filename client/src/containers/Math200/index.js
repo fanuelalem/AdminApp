@@ -18,10 +18,10 @@ state={
 }
     Questions = [
         {
-            questionText:'what is 1 plus 1',
+            questionText:'Find the missing terms in multiple of 3: 3, 6, 9, __, 15',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
+                {answerText:'44',isCorrect:false},
+                {answerText:'12',isCorrect:true},
                 {answerText:'23',isCorrect:false},
                 {answerText:'22',isCorrect:false},
                 {answerText:'12',isCorrect:false}
@@ -29,12 +29,12 @@ state={
 
         },
         {
-            questionText:'what is 2 plus 2',
+            questionText:'Solve 24÷8+2.',
             answerOptions:[
-                {answerText:'4',isCorrect:true},
+                {answerText:'4',isCorrect:false},
                 {answerText:'2',isCorrect:false},
                 {answerText:'3',isCorrect:false},
-                {answerText:'22',isCorrect:false},
+                {answerText:'5',isCorrect:true},
                 {answerText:'2',isCorrect:false}
             ]
 
@@ -51,24 +51,22 @@ state={
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'Solve: 300 – (150×2)',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'150',isCorrect:false},
+                {answerText:'100',isCorrect:false},
+                {answerText:'0',isCorrect:true},
+                {answerText:'50',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'The product of 121 x 0 x 200 x 25 is',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'4000',isCorrect:false},
+                {answerText:'1500',isCorrect:false},
+                {answerText:'0',isCorrect:true},
+                {answerText:'None Of Theses',isCorrect:false},
             ]
 
         }
@@ -188,7 +186,7 @@ state={
       </Grid.Column>
       <Grid.Column width={8} style={{paddingRight:'65px',paddingTop:'30px',paddingBottom:'30px'}}>
       <div>  
-{this.Questions[0].answerOptions.map((l)=>(<h2>
+{this.Questions[this.state.currentQuestion].answerOptions.map((l)=>(<h2>
   <button className='xo' style={{width:'100%',textAlign:'left',border:'solid 4px #076a8a',fontWeight:'300',padding:'10px 0 10px 15px'}}
    onClick={()=>this.handleNext(l.isCorrect)}>
         <span style={{color:'white'}}> {l.answerText}</span> 

@@ -18,57 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'what is 1 plus 1',
+            questionText:'The product of 4x and 0 is:',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'4x',isCorrect:false},
+                {answerText:'4',isCorrect:false},
+                {answerText:'0',isCorrect:true},
+                {answerText:'none of the above',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 2 plus 2',
+            questionText:'Solve 2x – y = 6, x – y = 2.',
             answerOptions:[
-                {answerText:'4',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'3',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'2',isCorrect:false}
+                {answerText:'x = 4 and y = 2',isCorrect:false},
+                {answerText:'x = 4 and y = -2',isCorrect:false},
+                {answerText:'x = -4 and y = -2',isCorrect:true},
+                {answerText:'x = -4 and y = -2',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'75% of 200 is',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'150',isCorrect:true},
+                {answerText:'125',isCorrect:false},
+                {answerText:'175',isCorrect:false},
+                {answerText:'100',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'In a race , Ram covers 5 km in 20 min. How much distance will he cover in 100 min ?',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'40 km',isCorrect:false},
+                {answerText:'26 km',isCorrect:false},
+                {answerText:'35 km',isCorrect:false},
+                {answerText:'25 km',isCorrect:true},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'In a class there are 30 boys and 12 girls. Determine the ratio of number of boys to girls.',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'04:03',isCorrect:false},
+                {answerText:'02:05',isCorrect:false},
+                {answerText:'03:04',isCorrect:false},
+                {answerText:'05:02',isCorrect:true},
             ]
 
         }
@@ -175,7 +170,7 @@ state={
  <Container>
 <h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Advanced Math 363</h1>
 <h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
-  <div style={{backgroundColor:'#242e4c',margin:"60px 0 0 0",borderRadius:'10px'}}>
+  <div style={{backgroundColor:'#242e4c',margin:"40px 0 0 0",borderRadius:'10px'}}>
  
 <Grid>
     <Grid.Row>
@@ -187,9 +182,10 @@ state={
       </Grid.Column>
       <Grid.Column width={8} style={{paddingRight:'65px',paddingTop:'30px',paddingBottom:'30px'}}>
       <div>  
-{this.Questions[0].answerOptions.map((l)=>(<h2>
+ {this.Questions[this.state.currentQuestion].answerOptions.map((l)=>(<h2>
   <button className='xo' style={{width:'100%',textAlign:'left',border:'solid 4px #076a8a',fontWeight:'300',padding:'10px 0 10px 15px'}}
    onClick={()=>this.handleNext(l.isCorrect)}>
+     {console.log(l,'')}
         <span style={{color:'white'}}> {l.answerText}</span> 
         
         

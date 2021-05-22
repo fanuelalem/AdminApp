@@ -124,7 +124,15 @@ return (
 
                    <div style={{margin:'20px 0 0 0'}}>
                        <Card style={{width:'100%',minHeight:"200px",padding:' 0 0 30px 0'}}>
-                       <h2 style={{margin:'20px 0 10px 20px'}}>Professor {finding.email}</h2> 
+                       <h2 style={{margin:'20px 0 10px 20px'}}>Professor
+    
+                      </h2> 
+                      <h2 style={{margin:'0px 0 10px 20px',fontWeight:'300'}}><a style={{color:'grey'}} href={`mailto:${finding.email}`}>
+                          <span style={{margin:'10px 0 0 0'}}>
+                          <Icon name='mail'></Icon>
+                          </span>
+               <span style={{padding:'0 0 0 6px'}}>{finding.email}</span>  </a>  </h2> 
+  
                        <h2 style={{margin:'20px 0 10px 20px'}}>Class Courses </h2> 
 
                        {/* <p>{finding._id}</p>  */}

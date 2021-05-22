@@ -18,57 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'what is 1 plus 1',
+            questionText:'The product of 82 and 5 is:',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'230',isCorrect:false},
+                {answerText:'100',isCorrect:false},
+                {answerText:'410',isCorrect:true},
+                {answerText:'95',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 2 plus 2',
+            questionText:'2 x (14 + 5) - 7 =',
             answerOptions:[
-                {answerText:'4',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'3',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'2',isCorrect:false}
+                {answerText:'75',isCorrect:false},
+                {answerText:'31',isCorrect:true},
+                {answerText:'50',isCorrect:false},
+                {answerText:'45',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'The product of 82 and 5 is:',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'30',isCorrect:true},
+                {answerText:'60',isCorrect:false},
+                {answerText:'55',isCorrect:false},
+                {answerText:'20',isCorrect:false},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'which one is part of pi?',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'2.13',isCorrect:false},
+                {answerText:'3.14',isCorrect:false},
+                {answerText:'34.4',isCorrect:false},
+                {answerText:'2.64',isCorrect:true},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:'What is the value of (14 + 5) - (5 - 2)',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'16',isCorrect:true},
+                {answerText:'10',isCorrect:false},
+                {answerText:'20',isCorrect:false},
+                {answerText:'40',isCorrect:false},
             ]
 
         }
@@ -187,9 +182,10 @@ state={
       </Grid.Column>
       <Grid.Column width={8} style={{paddingRight:'65px',paddingTop:'30px',paddingBottom:'30px'}}>
       <div>  
-{this.Questions[0].answerOptions.map((l)=>(<h2>
+ {this.Questions[this.state.currentQuestion].answerOptions.map((l)=>(<h2>
   <button className='xo' style={{width:'100%',textAlign:'left',border:'solid 4px #076a8a',fontWeight:'300',padding:'10px 0 10px 15px'}}
    onClick={()=>this.handleNext(l.isCorrect)}>
+     {console.log(l,'')}
         <span style={{color:'white'}}> {l.answerText}</span> 
         
         

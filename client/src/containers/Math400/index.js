@@ -18,52 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'The product of 4x and 0 is:',
+            questionText:'I am going to a wedding. I need to ___',
             answerOptions:[
-                {answerText:'4x',isCorrect:false},
-                {answerText:'4',isCorrect:false},
-                {answerText:'0',isCorrect:true},
-                {answerText:'none of the above',isCorrect:false},
+                {answerText:'be cutting my hair',isCorrect:false},
+                {answerText:'cutting my hair',isCorrect:false},
+                {answerText:'have my hair cut',isCorrect:true},
+                {answerText:'get cut my hair',isCorrect:false},
             ]
 
         },
         {
-            questionText:'Solve 2x – y = 6, x – y = 2.',
+            questionText:'Which would you __ have, gold or silver?',
             answerOptions:[
-                {answerText:'x = 4 and y = 2',isCorrect:false},
-                {answerText:'x = 4 and y = -2',isCorrect:false},
-                {answerText:'x = -4 and y = -2',isCorrect:true},
-                {answerText:'x = -4 and y = -2',isCorrect:false},
+                {answerText:'could',isCorrect:false},
+                {answerText:'prefer',isCorrect:false},
+                {answerText:'rather',isCorrect:true},
+                {answerText:'better',isCorrect:false},
             ]
 
         },
         {
-            questionText:'75% of 200 is',
+            questionText:'Where ___ to spend your holidays next summer?',
             answerOptions:[
-                {answerText:'150',isCorrect:true},
-                {answerText:'125',isCorrect:false},
-                {answerText:'175',isCorrect:false},
-                {answerText:'100',isCorrect:false},
+                {answerText:'are you going',isCorrect:true},
+                {answerText:'you are going',isCorrect:false},
+                {answerText:'you will',isCorrect:false},
+                {answerText:'will you',isCorrect:false},
             ]
 
         },
         {
-            questionText:'In a race , Ram covers 5 km in 20 min. How much distance will he cover in 100 min ?',
+            questionText:'___ never been to the theatre before.',
             answerOptions:[
-                {answerText:'40 km',isCorrect:false},
-                {answerText:'26 km',isCorrect:false},
-                {answerText:'35 km',isCorrect:false},
-                {answerText:'25 km',isCorrect:true},
+                {answerText:`I'll`,isCorrect:false},
+                {answerText:`I'm`,isCorrect:false},
+                {answerText:`I can`,isCorrect:false},
+                {answerText:`I've`,isCorrect:true},
             ]
 
         },
         {
-            questionText:'In a class there are 30 boys and 12 girls. Determine the ratio of number of boys to girls.',
+            questionText:`If ___ I'll tell him you called.`,
             answerOptions:[
-                {answerText:'04:03',isCorrect:false},
-                {answerText:'02:05',isCorrect:false},
-                {answerText:'03:04',isCorrect:false},
-                {answerText:'05:02',isCorrect:true},
+                {answerText:`I'll see him`,isCorrect:false},
+                {answerText:`I see him`,isCorrect:true},
+                {answerText:`I'd see him`,isCorrect:false},
+                {answerText:`I saw him`,isCorrect:false},
             ]
 
         }
@@ -168,7 +168,7 @@ state={
  
  
  <Container>
-<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Advanced Math 363</h1>
+<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Section 4</h1>
 <h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
   <div style={{backgroundColor:'#242e4c',margin:"40px 0 0 0",borderRadius:'10px'}}>
  

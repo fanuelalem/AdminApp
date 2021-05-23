@@ -170,7 +170,7 @@ axios.post('/api/user/postmyteacher',{email:item.email,courses:item.myCourses},{
       console.log(res,'res posting teacher')
   })
 
-}}>Add Teacher</Button></span>
+}}>Register</Button></span>
  
 
    

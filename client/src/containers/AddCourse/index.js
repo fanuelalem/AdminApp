@@ -51,80 +51,68 @@ addCourse = () =>{
   <div style={{margin:'40px 0 0 0'}}>
 
     
+    <Container style={{backgroundColor:"white",border:'solid 1px grey',padding:'40px 35px 40px 35px',borderRadius:"15px"}}>
 
-  <Grid columns='three'  >
-    <Grid.Row>
-      <Grid.Column>
-      <Card style={{width:"345px",height:"250px",background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
-<div style={{textAlign:"center",margin:'15px 0 0 0'}}>
 
-<h2 style={{margin:'0 0 0 0'}}> Math 100: Intro to Math</h2> 
-<Form onSubmit={this.addCourse}>
+
+    <h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'400',color:'#545e81',textAlign:'left'}}> English 100: Intro to English
+
+ 
+ 
+    <Form onSubmit={this.addCourse} style={{float:'left',margin:'0 20px 0 0'}}>
 
 <Button onClick={()=>{
-    this.setState({subject:'Math 100: Intro to Math',route:'/Math100'})
-}} style={{margin:'30px 0 70px 0'}} color='twitter'>Select</Button>
+    this.setState({subject:'English 100: Intro to English',route:'/Math100'})
+}} style={{margin:'0px 0 0px 0' ,color:'white'}} color='teal'>Select</Button>
     </Form> 
+</h2>
+
+
+<h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'400',color:'#545e81',textAlign:'left'}}> English 214: Intermediate English
+
+ 
+ 
+<Form onSubmit={this.addCourse} style={{float:'left',margin:'0 20px 0 0'}}>
+
+<Button onClick={()=>{
+this.setState({subject:'English 214: Intermediate English',route:'/Math110'})
+}} style={{margin:'0px 0 0px 0',color:'white'}} color='teal'>Select</Button>
+</Form> 
+</h2>
+
+<h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'400',color:'#545e81',textAlign:'left'}}>English 363: AP English
+
+ 
+ 
+<Form onSubmit={this.addCourse} style={{float:'left',margin:'0 20px 0 0'}}>
+
+<Button onClick={()=>{
+this.setState({subject:'English 363: AP English',route:'/Math200'})
+}} style={{margin:'0px 0 0px 0',color:'white'}}color='teal' >Select</Button>
+</Form> 
+</h2>
  
 
-</div> 
-  </Card>      </Grid.Column>
-      <Grid.Column>
-      <Card style={{width:"345px",height:"250px",background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
-<div style={{textAlign:"center",margin:'15px 0 0 0'}}>
+<h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'400',color:'#545e81',textAlign:'left'}}>English 400: Advanced English
 
-<h2 style={{margin:'0 0 0 0'}}> Math 210</h2> 
-<Form onSubmit={this.addCourse}>
+ 
+ 
+<Form onSubmit={this.addCourse} style={{float:'left',margin:'0 20px 0 0'}}>
 
 <Button onClick={()=>{
-    this.setState({subject:'Math 210',route:'/math110'})
-}} style={{margin:'30px 0 70px 0'}} color='twitter'>Select</Button>
-    </Form> 
-</div>
-  </Card>      </Grid.Column>
-      <Grid.Column>
-      <Card style={{width:"345px",height:"250px",background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
-<div style={{textAlign:"center",margin:'15px 0 0 0'}}>
+this.setState({subject:'English 400: Advanced English',route:'/Math400'})
+}} style={{margin:'0px 0 0px 0',color:'white'}} color='teal' >Select</Button>
+</Form> 
+</h2>
+  </Container>     
 
-<h2 style={{margin:'0 0 0 0'}}> Math 350</h2>
-<Form onSubmit={this.addCourse}>
 
-<Button onClick={()=>{
-    this.setState({subject:'Math 350',route:'/math200'})
-}} style={{margin:'30px 0 70px 0'}} color='twitter'>Select</Button>
-    </Form> 
-</div>
+  
+  
     
-  </Card>      
+      
   
-  </Grid.Column>
-    </Grid.Row>
-    </Grid>
-
-    <Grid columns='three'  >
-    <Grid.Row>
-      <Grid.Column>
-      <Card style={{width:"345px",height:"250px",background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
-<div style={{textAlign:"center",margin:'15px 0 0 0'}}>
-
-<h2 style={{margin:'0 0 0 0'}}> Advanced Math 363</h2>  
-<Form onSubmit={this.addCourse}>
-
-<Button onClick={()=>{
-    this.setState({subject:'Advanced Math 363',route:'/math400'})
-}} style={{margin:'30px 0 70px 0'}} color='twitter'>Select</Button>
-    </Form> 
-</div> 
-  </Card>      </Grid.Column>
-      <Grid.Column>
-          
-  </Grid.Column>
-      <Grid.Column>
-          
-  
-  </Grid.Column>
-    </Grid.Row>
-    </Grid>
+   
     </div>
 
             </div>

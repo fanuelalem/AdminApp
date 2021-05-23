@@ -91,15 +91,21 @@ let a = response.data.myCourses.filter(function (a) {
  
 
    
+<Container style={{backgroundColor:"white",border:'solid 1px grey',padding:'40px 35px 40px 35px',borderRadius:"15px"}}>
+<div style={{minHeight:"200px"}}>
 
-
+  
     {this.state.myuserCourses? this.state.myuserCourses.map((item)=>(
         <div >
 
-           <Card style={{width:"345px",height:"250px",float:'left',margin:'10px 15px 0 0',background:'linear-gradient(#D3CCE3, #E9E4F0)'}}>
+           {/* <Container style={{width:"705px",height:"250px",margin:'10px 15px 30px 0'}}> */}
 <div style={{textAlign:"center",margin:'15px 0 0 0'}}>
 
-<Button style={{margin:"20px 0 0 0"}}color='red' onClick={()=>{
+ 
+
+<h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'600',color:'#545e81',textAlign:'left'}}> {item.subject} 
+
+ <Button style={{margin:"0px 0 0 0",float:'right'}}color='red' onClick={()=>{
    this.findCourseIdAndDelete(item._id)
 }}>
   <span>
@@ -107,21 +113,11 @@ let a = response.data.myCourses.filter(function (a) {
    <Icon name='x'></Icon>
   </span>
    
-</Button>
-
-<h2 style={{margin:'40px 0 0 0',fontWeight:'400'}}> {item.subject}</h2> 
-{/* <h2 style={{margin:'40px 0 0 0'}}> <h2> {item.subject}</h2></h2>  */}
-
-{/* <Link
-as={Link}
-to={item.route}
->
-  take test
-</Link> */}
+</Button></h2> 
+ 
  <div style={{margin:'20px 0 0 0'}}>
    
- {console.log(item.route,'item route?')}
-
+ 
  {this.state.userData.isStudent?
  <Link
  as={Link}
@@ -132,12 +128,15 @@ to={item.route}
 null}
      
 </div>
-
+<hr></hr>
 </div> 
-  </Card>  
+  {/* </Container>   */}
 
         </div>
       )):<p> you do not have any classes yey</p>}
+      </div>
+
+</Container>
 
             </div>
             </Container>

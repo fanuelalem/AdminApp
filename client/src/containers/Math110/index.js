@@ -18,54 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'If we minus 712 from 1500, how much do we get?',
+            questionText:` I ___ travelling by bus.`,
             answerOptions:[
-                {answerText:'788',isCorrect:true},
-                {answerText:'778',isCorrect:false},
-                {answerText:'768',isCorrect:false},
-                {answerText:'758',isCorrect:false},
+                {answerText:`didn't used to`,isCorrect:false},
+                {answerText:`am not used to`,isCorrect:true},
+                {answerText:`used to`,isCorrect:false},
+                {answerText:'do not used to',isCorrect:false},
              ]
 
         },
         {
-            questionText:'What is the sum of 130+125+191?',
+            questionText:` What ___ since you arrived.`,
             answerOptions:[
-                {answerText:'343',isCorrect:false},
-                {answerText:'233',isCorrect:false},
-                {answerText:'322',isCorrect:false},
-                {answerText:'212',isCorrect:false},
-                {answerText:'446',isCorrect:true}
+                {answerText:'are you doing',isCorrect:false},
+                {answerText:'will you do',isCorrect:false},
+                {answerText:'did you do',isCorrect:false},
+                {answerText:'have you been doing',isCorrect:true}
             ]
 
         },
         {
-            questionText:'50 times of 8 is equal to:',
+            questionText:`Neil was reading the newspaper when he came ___ an article about an old friend of his.`,
             answerOptions:[
-                {answerText:'80',isCorrect:false},
-                {answerText:'400',isCorrect:true},
-                {answerText:'800',isCorrect:false},
-                {answerText:'4000',isCorrect:false},
+                {answerText:'into',isCorrect:false},
+                {answerText:'across',isCorrect:true},
+                {answerText:'up with',isCorrect:false},
+                {answerText:'on',isCorrect:false},
             ]
 
         },
         {
-            questionText:'110 divided by 10 is:',
+            questionText:'Jenny seems ___ very happy these days.',
             answerOptions:[
-                {answerText:'11',isCorrect:true},
-                {answerText:'10',isCorrect:false},
-                {answerText:'5',isCorrect:false},
-                {answerText:'None Of These',isCorrect:false},
+                {answerText:'to be',isCorrect:true},
+                {answerText:'being',isCorrect:false},
+                {answerText:'be',isCorrect:false},
+                {answerText:'to being',isCorrect:false},
             ]
 
         },
         {
-            questionText:'20+(90÷2) is equal to:',
+            questionText:` “I ___ to reach Jane on the phone all day.” “Don't you know? She's gone on holiday.”`,
             answerOptions:[
-                {answerText:'65',isCorrect:true},
-                {answerText:'25',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'have tried',isCorrect:true},
+                {answerText:'tried',isCorrect:false},
+                {answerText:'am trying',isCorrect:false},
+                {answerText:'try',isCorrect:false},
             ]
 
         }
@@ -170,7 +168,7 @@ state={
  
  
  <Container>
-<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Math 210</h1>
+<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}>Section 2</h1>
 <h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
   <div style={{backgroundColor:'#242e4c',margin:"60px 0 0 0",borderRadius:'10px'}}>
  

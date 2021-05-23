@@ -18,52 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'The product of 82 and 5 is:',
+            questionText:'Sam hopes ___ an astronaut one day.',
             answerOptions:[
-                {answerText:'230',isCorrect:false},
-                {answerText:'100',isCorrect:false},
-                {answerText:'410',isCorrect:true},
-                {answerText:'95',isCorrect:false},
+                {answerText:'becoming',isCorrect:false},
+                {answerText:'become',isCorrect:false},
+                {answerText:'to become',isCorrect:true},
+                {answerText:'he became',isCorrect:false},
             ]
 
         },
         {
-            questionText:'2 x (14 + 5) - 7 =',
+            questionText:'The man sitting next to me on the plane was very nervous. He ____ before.',
             answerOptions:[
-                {answerText:'75',isCorrect:false},
-                {answerText:'31',isCorrect:true},
-                {answerText:'50',isCorrect:false},
-                {answerText:'45',isCorrect:false},
+                {answerText:`didn't fly`,isCorrect:false},
+                {answerText:'hasn’t flown ',isCorrect:true},
+                {answerText:'hadn’t flown ',isCorrect:false},
+                {answerText:'wasn’t flying',isCorrect:false},
             ]
 
         },
         {
-            questionText:'The product of 82 and 5 is:',
+            questionText:'My father ___ to be a teacher, but now he has retired.',
             answerOptions:[
-                {answerText:'30',isCorrect:true},
-                {answerText:'60',isCorrect:false},
-                {answerText:'55',isCorrect:false},
-                {answerText:'20',isCorrect:false},
+                {answerText:'used',isCorrect:true},
+                {answerText:'got used',isCorrect:false},
+                {answerText:'is used',isCorrect:false},
+                {answerText:`didn't use`,isCorrect:false},
             ]
 
         },
         {
-            questionText:'which one is part of pi?',
+            questionText:'In recent years there has been a large increase ____ the number of people who take no regular exercise.',
             answerOptions:[
-                {answerText:'2.13',isCorrect:false},
-                {answerText:'3.14',isCorrect:false},
-                {answerText:'34.4',isCorrect:false},
-                {answerText:'2.64',isCorrect:true},
+                {answerText:'for',isCorrect:false},
+                {answerText:'to',isCorrect:false},
+                {answerText:'of',isCorrect:false},
+                {answerText:'in',isCorrect:true},
             ]
 
         },
         {
-            questionText:'What is the value of (14 + 5) - (5 - 2)',
+            questionText:'It rained so hard the whole village ___ .',
             answerOptions:[
-                {answerText:'16',isCorrect:true},
-                {answerText:'10',isCorrect:false},
-                {answerText:'20',isCorrect:false},
-                {answerText:'40',isCorrect:false},
+                {answerText:'flooded',isCorrect:true},
+                {answerText:'burned',isCorrect:false},
+                {answerText:'scalded',isCorrect:false},
+                {answerText:'froze',isCorrect:false},
             ]
 
         }
@@ -168,7 +168,7 @@ state={
  
  
  <Container>
-<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Intro To Mathematics</h1>
+<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Section 1</h1>
 <h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
   <div style={{backgroundColor:'#242e4c',margin:"40px 0 0 0",borderRadius:'10px'}}>
  

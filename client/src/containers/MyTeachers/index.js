@@ -145,7 +145,7 @@ return (
                                to=  {jay.route}
                                style={{float:'right',margin:'0 20px 0 0'}}
                                >
-                                      <Button color='green'> take exam</Button>
+                                      <Button color='instagram'> take exercise </Button>
                                </Link></h3>
                                <h4 style={{margin:'20px 0 0 20px',fontWeight:"500"}}> <h3>
                                    <span style={{color:'gray',fontWeight:'300'}}>assigned </span>  {moment(jay.dateCreated).fromNow()}...</h3>

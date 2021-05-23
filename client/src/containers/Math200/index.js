@@ -18,55 +18,52 @@ state={
 }
     Questions = [
         {
-            questionText:'Find the missing terms in multiple of 3: 3, 6, 9, __, 15',
+            questionText:'By the time Eric ___ at the airport, his flight had already departed.',
             answerOptions:[
-                {answerText:'44',isCorrect:false},
-                {answerText:'12',isCorrect:true},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'arrived',isCorrect:true},
+                {answerText:'has arrived',isCorrect:false},
+                {answerText:'is arriving',isCorrect:false},
+                {answerText:'arrival',isCorrect:false},
             ]
 
         },
         {
-            questionText:'Solve 24÷8+2.',
+            questionText:'She was grateful to all the volunteers ___ their help.',
             answerOptions:[
-                {answerText:'4',isCorrect:false},
-                {answerText:'2',isCorrect:false},
-                {answerText:'3',isCorrect:false},
-                {answerText:'5',isCorrect:true},
-                {answerText:'2',isCorrect:false}
+                {answerText:'about',isCorrect:false},
+                {answerText:'of',isCorrect:false},
+                {answerText:'in',isCorrect:false},
+                {answerText:'for',isCorrect:true},
             ]
 
         },
         {
-            questionText:'what is 1 plus 1',
+            questionText:' Lisa ___ the house when her husband came home.',
             answerOptions:[
-                {answerText:'44',isCorrect:true},
-                {answerText:'2',isCorrect:false},
-                {answerText:'23',isCorrect:false},
-                {answerText:'22',isCorrect:false},
-                {answerText:'12',isCorrect:false}
+                {answerText:'painted',isCorrect:true},
+                {answerText:'paints',isCorrect:false},
+                {answerText:'is painting',isCorrect:false},
+                {answerText:'is painted',isCorrect:false},
             ]
 
         },
         {
-            questionText:'Solve: 300 – (150×2)',
+            questionText:`Jane's ___ nice and polite.`,
             answerOptions:[
-                {answerText:'150',isCorrect:false},
-                {answerText:'100',isCorrect:false},
-                {answerText:'0',isCorrect:true},
-                {answerText:'50',isCorrect:false},
+                {answerText:'a',isCorrect:false},
+                {answerText:'from',isCorrect:false},
+                {answerText:'very',isCorrect:true},
+                {answerText:'at',isCorrect:false},
             ]
 
         },
         {
-            questionText:'The product of 121 x 0 x 200 x 25 is',
+            questionText:'They ____ at home last night.',
             answerOptions:[
-                {answerText:'4000',isCorrect:false},
-                {answerText:'1500',isCorrect:false},
-                {answerText:'0',isCorrect:true},
-                {answerText:'None Of Theses',isCorrect:false},
+                {answerText:`aren't`,isCorrect:false},
+                {answerText:`don't`,isCorrect:false},
+                {answerText:`weren't`,isCorrect:true},
+                {answerText:`didn't`,isCorrect:false},
             ]
 
         }
@@ -171,7 +168,7 @@ state={
  
  
  <Container>
-<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Math 350</h1>
+<h1 style={{margin:'30px 0 0 0',fontSize:'45px',fontWeight:'bolder'}}> Section 3</h1>
 <h2 style={{margin:'9px 0 0 0',fontWeight:'300'}}> Please Begin Your Quiz</h2>
  
   <div style={{backgroundColor:'#242e4c',margin:"60px 0 0 0",borderRadius:'10px'}}>

@@ -20,7 +20,7 @@ state = {
 // }
 
 addCourse = () =>{
-    axios.post('/api/user/mycourses',{subject:this.state.subject,route:this.state.route},{
+     axios.post('/api/user/mycourses',{subject:this.state.subject,route:this.state.route},{
         headers: { authorization: localStorage.getItem('token') },
       })
       .then((res)=>{
@@ -41,7 +41,7 @@ addCourse = () =>{
  <h1 style={{margin:'30px 0 0 0',fontSize:'35px',fontWeight:'bolder'}}> Teacher Dashboard</h1>
  <hr></hr>
 
- <h2 style={{margin:'9px 0 30px 0',fontWeight:'300'}}> Add Courses To Your Class</h2>
+ <h2 style={{margin:'9px 0 30px 0',fontWeight:'300'}}> Add an exercise To Your Class</h2>
 
   </div>
  

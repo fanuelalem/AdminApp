@@ -24,6 +24,10 @@
     cursor: pointer;
     border-radius: 8px;
 }
+
+.ox:hover {
+    background-color: green;
+}
 .search-container{
     text-align:center;
         padding-top:10px;

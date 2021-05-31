@@ -56,61 +56,25 @@ componentDidMount() {
         headers: { authorization: localStorage.getItem('token') },
       })
       .then((res)=>{
+
+       
+        // let a = response.data.myCourses.filter(function (a) {
+        //     return !this[a.subject] && (this[a.subject] = true);
+        //   }, Object.create(null))
+          
+          
+        //        this.setState({userData:response.data,myuserCourses:a})
+          
+
           this.setState({filteredUSers:res.data},()=>{
               console.log(res.data,'checking for filtred users')
           })
       })
  }
-
-// getTeacherById = (id) => {
-//     axios.get(`/api/teacher/teacher/${id}`)
-//     .then((res)=>{
-//         this.setState({getTeacherById:res.data})
-
-
-// // axios.get('/api/teacher/teacherprofile')
-// // .then((res)=>{
-// //     console.log(res)
-// // })
-
-//  axios.post('/api/user/postmyteacher',{id:this.state.getTeacherById._id,email:this.state.getTeacherById.email,password:this.state.getTeacherById.password},{
-//         headers: { authorization: localStorage.getItem('token') },
-//       })
-//       .then((response)=>{
-//           console.log(response,'post teacher')
-//       })
-
-// postTeacher = () => {
-//     axios.post('/api/user/postmyteacher',{email:'teachertestpost',courses:'courstest2'},{
-//         headers: { authorization: localStorage.getItem('token') },
-//       })
-//       .then((res)=>{
-//           console.log(res,'res posting teacher')
-//       })
-// }
-
-
- 
-
-//     })
- 
-//      this.postTeacher()
-
-// }
-
-// postTeacher = () => {
-    
-//     // axios.post('/api/user/postmyteacher',{email:'daniel',password:'yesser'},{
-//     //     headers: { authorization: localStorage.getItem('token') },
-//     //   })
-//     //   .then((response)=>{
-//     //       console.log(response,'post teacher')
-//     //   })
-// }
  
 
     render() {
-
+       
 
         return (
             
@@ -152,6 +116,10 @@ this.state.filteredUSers.map((item)=>(
 <Card.Description style={{color:"black"}}>
  
     <h3 style={{margin:'0 0 0px 0'}} > 
+
+
+
+    
  
      
     {item.myCourses?item.myCourses.map((x)=>(

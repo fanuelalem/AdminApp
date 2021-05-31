@@ -15,7 +15,9 @@ const {
    getTotalPoints,
    postAverage,
    getAverage,
-   deleteCourseById
+   deleteCourseById,
+   updateCourseById
+   
 } = require('./../../../controllers/userController');
 
   
@@ -60,6 +62,8 @@ router.route('/stock')
 
   router.route('/course/:courseid')
   .delete(requireAuth, deleteCourseById)
+  .patch(requireAuth, updateCourseById)
+
 
   router.route('/mytotal')
   .post(requireAuth, postTotal)

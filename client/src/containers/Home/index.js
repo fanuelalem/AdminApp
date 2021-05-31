@@ -24,20 +24,20 @@ export default class Home extends Component {
            <div  >
 
  <div style={{padding:"20px",backgroundColor:'transparent'}}>
- <h1 style={{color:"black",fontSize:"45px"}}> welcome </h1>
+ <h1 style={{color:"black",fontSize:"45px",margin:'0 0 0 0'}}> welcome </h1>
 <div style={{padding:"20px"}}>
 <Link 
  
 as ={Link}
 to="/signup">
-  <Button style={{backgroundColor:"#f7fafe"}}>Sign up</Button>
+  <Button className='ox' style={{backgroundColor:"#f7fafe",margin:'0 5px 0 0',borderRadius:'0px'}}>Sign up</Button>
 </Link>
 
 <Link  
  
 as ={Link}
 to="/signin">
-  <Button style={{backgroundColor:"#f7fafe"}}>Sign In</Button>
+  <Button className='ox' style={{backgroundColor:"#f7fafe",margin:"0 0 0 5px",borderRadius:'0px'}}>Sign In</Button>
 </Link>
 </div>
  

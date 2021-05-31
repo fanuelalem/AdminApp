@@ -107,7 +107,7 @@ class SignIn extends Component {
           />
           <Button
           content='Sign In'
-          style={{backgroundColor:'#ffc629',color:'white'}}
+          color='twitter'
           fluid
           size='large'
           type='submit'
@@ -134,4 +134,4 @@ class SignIn extends Component {
   }
    
 }
-export default reduxForm({ form: 'signin' })(SignIn);
+export default reduxForm({ form: 'Pin' })(AddPin);

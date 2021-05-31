@@ -79,7 +79,7 @@ let j = gettingMyTeacherEmailstoFind?gettingMyTeacherEmailstoFind.length?getting
    console.log(j,'j testing')
 
 let findanemail = check?check.map((jfk)=>{
-  
+  console.log(jfk,'jfk')
  return jfk
 
  }):null
@@ -91,7 +91,7 @@ console.log(findanemail,'is this real teacher object?')
 return (
              <div style={{margin:'30px 0 0 0'}}>
 
-<style>{'body { background-color:#edf0f3}'}</style>
+<style>{'body { background-color:#f7f7f7}'}</style>
 
 
                  <Grid divided='vertically'>
@@ -145,7 +145,7 @@ return (
                                to=  {jay.route}
                                style={{float:'right',margin:'0 20px 0 0'}}
                                >
-                                      <Button color='instagram'> take exercise </Button>
+                                      <Button color='teal'> take exercise </Button>
                                </Link></h3>
                                <h4 style={{margin:'20px 0 0 20px',fontWeight:"500"}}> <h3>
                                    <span style={{color:'gray',fontWeight:'300'}}>assigned </span>  {moment(jay.dateCreated).fromNow()}...</h3>

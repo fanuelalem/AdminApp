@@ -148,7 +148,7 @@ class SignUp extends Component {
           <Button
  
           content="Sign Up"
-          color="twitter"
+          style={{backgroundColor:'#ffc629',color:'white'}}
           fluid
           size="large"
           type="submit"

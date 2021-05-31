@@ -8,8 +8,10 @@ const CourseSchema = new Schema({
   route:{
       type: String
   },
-  
-  dateCreated: {
+  code:{
+    type:Number
+  }
+  ,dateCreated: {
     type: Date,
     default: Date.now(),
   },

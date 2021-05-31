@@ -1,5 +1,5 @@
  import React, { Component } from 'react'
-import { Button, Checkbox, Form,Container,Card,Grid,Icon } from 'semantic-ui-react'
+import { Button, Checkbox, Form,Container,Image,Header,Card,Modal,Grid,Icon } from 'semantic-ui-react'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,8 @@ export default class MyCourses extends Component {
 
 state= {
     userData:'',
-    myuserCourses:[]
+    myuserCourses:[],
+    open:false
 }
 
 componentDidMount() {
@@ -36,6 +37,16 @@ findCourseIdAndDelete = async (id) => {
    })
 } 
 
+
+assignPasscode = (id,val) => {
+
+  axios.patch(`/api/user/course/${id}`,{code:1111},{
+    headers: { authorization: localStorage.getItem('token') },
+  })
+  .then((res)=>{
+    console.log(res,'res')
+  })
+}
 
 getUserData = () => {
   axios.get('/api/user/profile', {
@@ -98,14 +109,15 @@ let a = response.data.myCourses.filter(function (a) {
     {this.state.myuserCourses? this.state.myuserCourses.map((item)=>(
         <div >
 
-           {/* <Container style={{width:"705px",height:"250px",margin:'10px 15px 30px 0'}}> */}
-<div style={{textAlign:"center",margin:'15px 0 0 0'}}>
+ <div style={{textAlign:"center",margin:'15px 0 0 0'}}>
 
  
 
 <h2 style={{margin:'0px 0 40px 0',fontSize:'35px',fontWeight:'600',color:'#545e81',textAlign:'left'}}> {item.subject} 
 
- <Button style={{margin:"0px 0 0 0",float:'right'}}color='red' onClick={()=>{
+
+
+<Button style={{float:'right'}}color='red' onClick={()=>{
    this.findCourseIdAndDelete(item._id)
 }}>
   <span>
@@ -113,9 +125,60 @@ let a = response.data.myCourses.filter(function (a) {
    <Icon name='x'></Icon>
   </span>
    
-</Button></h2> 
+</Button>
+
+ {/* <Button style={{float:'right'}}color='instagram' onClick={()=>{
+   this.assignPasscode(item._id)
+}}>
+  <span>
+  Assign Passcode 
+  </span>
+   
+</Button> */}
+
+<Modal
+      onClose={() => this.setState({open:false})}
+      onOpen={() => this.setState({open:true})}
+      open={this.state.open}
+      trigger={
+<Button style={{float:'right'}}color='teal' onClick={()=>{
+   this.assignPasscode(item._id)
+}}>
+  <span>
+  Assign Passcode 
+  </span>
+   
+</Button>     
+    }
+    >
+      <Modal.Header>Select a Photo</Modal.Header>
+      <Modal.Content image>
+        <Image size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' wrapped />
+        <Modal.Description>
+          <Header>Default Profile Image</Header>
+          <h2>enter your passcode here </h2>
+          
+          <p>Is it okay to use this photo?</p>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button color='black' onClick={() => this.setState({open:false})}>
+          Nope
+        </Button>
+        <Button
+          content="Yep, that's me"
+          labelPosition='right'
+          icon='checkmark'
+          onClick={() => this.setState({open:false})}
+          positive
+        />
+
  
- <div style={{margin:'20px 0 0 0'}}>
+      </Modal.Actions>
+    </Modal>
+
+</h2> 
+  <div style={{margin:'20px 0 0 0'}}>
    
  
  {this.state.userData.isStudent?
@@ -130,10 +193,10 @@ null}
 </div>
 <hr></hr>
 </div> 
-  {/* </Container>   */}
+  
 
         </div>
-      )):<p> you do not have any classes yey</p>}
+      )):<p> you do not have any classes yet</p>}
       </div>
 
 </Container>

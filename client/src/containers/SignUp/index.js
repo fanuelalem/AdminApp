@@ -64,19 +64,7 @@ class SignUp extends Component {
       />
     )
   }
-  // renderEmail = ({ input, meta }) => {
-  //   return (
-  //     <Form.Input
-  //       {...input}
-  //       error={ meta.touched && meta.error }
-  //       fluid
-  //       icon='user'
-  //       iconPosition='left'
-  //       autoComplete='off'
-  //       placeholder='Email Address'
-  //     />
-  //   );
-  // }
+   
 
 
   renderPassword = ({ input, meta }) => {

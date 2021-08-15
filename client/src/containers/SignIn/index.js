@@ -19,7 +19,7 @@ class SignIn extends Component {
       const { data } = await axios.post('/api/auth/signin', formValues);
       localStorage.setItem('token', data.token);
       dispatch({ type: AUTH_USER, payload: data.token });
-      formValues.isStudent? this.props.history.push('/pickteacher'):this.props.history.push('/mycourses')
+      formValues.isStudent? this.props.history.push('/menu'):this.props.history.push('/menu')
     } catch (e) {
        throw new SubmissionError({
         email: 'Please try again',
@@ -32,7 +32,10 @@ class SignIn extends Component {
   
   renderEmail = ({input,meta}) => {
      return(
-      <Form.Input
+      <input
+ 
+      id='inputID'
+       style={{backgroundColor:"#f7f7f7",marginBottom:"10px",border:"none"}}
       {...input}
       fluid
 
@@ -47,7 +50,10 @@ class SignIn extends Component {
   
   renderPassword = ({ input, meta }) => {
     return (
-      <Form.Input
+      <input
+      id='inputID'
+ 
+       style={{backgroundColor:"#f7f7f7",marginBottom:"10px",border:"none"}}
         {...input}
         error={meta.touched && meta.error }
         fluid
@@ -64,30 +70,48 @@ class SignIn extends Component {
     const {handleSubmit,invalid,submitting,submitFailed}=this.props
     return(
  <div>
-   <Helmet>
-   <style>{'body { }'}</style>
-
-         </Helmet>
-   {/* <div className='j2'>
- <Image style={{backgroundColor:'white'}} className='im2'src={logo}/>
-  
- </div> */}
- 
- <Grid textAlign="center" style={{ height: '85vh',margin:'0px 0 25px 0' }} verticalAlign="middle">
-          <Grid.Column style={{ maxWidth: 500}}>
-
    
+   
+   
+   <div className='backgroundimg' style={{height:750}} >
+     
+ 
     
-  <div style={{margin:'100px 0 0 0'}}>
-
-  
-      <Form   size='large' onSubmit={handleSubmit(this.onSubmit)}>
-      <Segment style={{backgroundColor:'#f7f8fa'}} >
-
-         <Header color="grey" textAlign="center" style={{ fontSize: '34px' }}>
-               Log-in to your account
-            </Header>
-             <Field
+ 
+     <div style={{width:"100%",height:"100%",display:"flex"}}>
+     
+      <div style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100%"}}>
+       
+      <h1 className='title' style={{color:"white",fontSize:"80px",paddingLeft:"15px",margin:"0px"}}>LEARNING MADE <br></br>  EASY</h1>
+      <div style={{paddingLeft:"15px",paddingTop:"10px"}}>
+      <p className='title' style={{fontSize:"18px",color:"white",lineHeight:"1.8",fontWeight:"300"}}>Improve your Skills by joining our Easy to use Online Platform and learn about English, Math, and any subject and prepare you 
+      for the future.</p>
+     
+      </div>
+     
+     </div>
+     
+     
+     
+     <div style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:'center'}}>
+       
+       <div style={{width:"450px",height:"400px",backgroundColor:"white"}}>
+     
+      
+       <div style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100%",alignItems:'center',height:"100%"}}>
+       
+     
+     
+       
+       <Form size='large' onSubmit={handleSubmit(this.onSubmit)}>
+             
+             <Segment vertical='none' style={{width:"400px"}}>
+             <p className='title' style={{ textAlign:"center",margin:"0px",fontSize:"18px",fontWeight:"500",color:"#260275",marginBottom:"15px"}}>LOGIN </p> 
+        <h2 className='title' style={{ textAlign:"center",margin:"0px",marginBottom:"20px",color:"#260275",color:"#ff0e7d",fontWeight:"400",fontSize:"24px"}}>
+          Welcome back, Please Provide your credentials below. </h2>           
+     
+             
+               <Field
            name='email'
           component={this.renderEmail}
           validate={[
@@ -95,40 +119,49 @@ class SignIn extends Component {
             email({ msg: 'You must provide a valid email address' })
           ]}
           />
- 
+             
 
- 
-          <Field
+<Field
           name='password'
           component={this.renderPassword}
           validate={[
             required({msg:'you must provide a password'})
           ]}
           />
-          <Button
-          content='Sign In'
-          style={{backgroundColor:'#ffc629',color:'white'}}
-          fluid
-          size='large'
-          type='submit'
-          disabled={invalid || submitting || submitFailed}
-          />
-                 </Segment>
-
-       </Form>
-         
-       </div>
-
-      </Grid.Column>
-</Grid>
-
      
- 
-
-
       
-
- 
+                 <div style={{display:"flex",justifyContent:"center"}}>
+                 <Button
+     
+     content="Sign In"
+     style={{backgroundColor:'grey',color:'white',width:"300px",borderRadius:"20px",marginTop:"10px"}}
+     fluid
+     size="large"
+     type="submit"
+     disabled={ invalid || submitting || submitFailed }
+      />
+                 </div>
+              </Segment>
+           </Form>
+           
+           
+           
+           
+           <p style={{marginTop:"10px"}}>New? <Link to='/'> <span style={{color:"grey"}}> Register</span></Link>   </p>
+     
+      </div> 
+      
+     
+       </div>
+      
+      </div> 
+      
+   
+     </div>
+            </div>
+           
+           
+        
 </div>
     )
   }

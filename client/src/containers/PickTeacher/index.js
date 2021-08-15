@@ -78,26 +78,87 @@ componentDidMount() {
 
         return (
             
-<Container>
-<style>{'body { background-color:#edf0f3}'}</style>
+ 
+<div style={{display:"flex",justifyContent:"center"}}>
 
-<div style={{margin:'50px 40px 0 0'}}>
+<div style={{width:"30%",display:'flex',justifyContent:'center',alignContent:"center"}}>
+
+  
+
+ 
+ <div >
+
+ <p>Image</p>
+ <p>Image</p>
+
+ </div>
+ 
+     
+     
+     </div>
+     
+ <div style={{width:"70%"}}>
+<h1> Enroll</h1>
+{this.state.filteredUSers?this.state.filteredUSers.map((item)=>(
+    <div>
+        {item.isStudent?
+        null:
+<div style={{width:'700px',minHeight:"140px",padding:' 0 0 30px 0px',border:"none"}}>
+       
+       <h2 style={{margin:'20px 0 5px 0px'}}>Professor {item.email}  
+       </h2> 
+       <span style={{margin:'10px 0 0 0',fontSize:"25px"}}>
+          {item.myCourses? 'Courses' : null}
+     
+    </span>
+    <div style={{margin:'25px 0 20px 0'}} > 
+         
+        {item.myCourses?item.myCourses.map((x)=>(
+        <p style={{fontWeight:'300',textAlign:"left"}}>{x.subject}</p>
+        
+    )):null}</div>
+    
+    
+    <span> <Button onClick={()=>{
+    
+    axios.post('/api/user/postmyteacher',{email:item.email,courses:item.myCourses},{
+        headers: { authorization: localStorage.getItem('token') },
+      })
+      .then((res)=>{
+          console.log(res,'res posting teacher')
+      })
+    
+    }}>Register</Button></span>
+     
+    
+    
+    
+           </div>
+        }
+        </div>
+)):null}
+ </div>
+ 
+
+ </div>
+        )
+    }
+}
+
+
+ 
+ 
+{/* <div style={{backgroundColor:"orange"}} >
 <div  >
-<h1 style={{margin:" 0 0 20px 0"}}>
-Enroll
+<h1 className='title' style={{fontWeight:"500",color:'#ff0e7d'}}>
+Enrolll
 </h1>
 </div>
-
-
-{/* {this.state.filteredUSers?
-this.state.filteredUSers} */}
 
 {this.state.filteredUSers?
 this.state.filteredUSers.map((item)=>(
 
-
-
-
+ 
     
     <div>
    {item.isStudent?
@@ -105,60 +166,11 @@ this.state.filteredUSers.map((item)=>(
 
 
    <div style={{margin:'20px 0 0 0',textAlign:"center"}}>
-   <Card style={{width:'700px',minHeight:"140px",padding:' 0 0 30px 0'}}>
-       
-   <h2 style={{margin:'20px 0 10px 20px'}}>Professor {item.email}  
-   </h2> 
-   <span style={{margin:'10px 0 0 0',fontSize:"25px"}}>
-      {item.myCourses? 'Courses' : null}
- 
-</span>
-<Card.Description style={{color:"black"}}>
- 
-    <h3 style={{margin:'0 0 0px 0'}} > 
-
-
-
     
- 
-     
-    {item.myCourses?item.myCourses.map((x)=>(
-    <p style={{fontWeight:'300'}}>{x.subject}</p>
-    
-)):null}</h3>
-</Card.Description>
-
-
-<span> <Button onClick={()=>{
-
-axios.post('/api/user/postmyteacher',{email:item.email,courses:item.myCourses},{
-    headers: { authorization: localStorage.getItem('token') },
-  })
-  .then((res)=>{
-      console.log(res,'res posting teacher')
-  })
-
-}}>Register</Button></span>
- 
-
-   
-        
-         
-       
-   
-
-       </Card>
    </div>
 }
 </div> 
 )):<div></div>}
  
 
- </div>
-</Container>
-        )
-    }
-}
-
-
- 
+ </div> */}

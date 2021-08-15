@@ -51,7 +51,7 @@ module.exports = {
         isStudent
         
       }).save();
-      console.log(user,'dadad')
+       
       const currentUser = await User.findById(user._id).select('-password');
       // Eventually we will send a token
       return res.json({ token: tokenForUser(user), user: currentUser });

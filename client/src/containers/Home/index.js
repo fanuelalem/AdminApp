@@ -133,7 +133,7 @@ console.log(this.props,'sdlcksmdc')
         <Segment vertical='none' style={{width:"400px"}}>
         <p className='title' style={{ textAlign:"center",margin:"0px",fontSize:"18px",fontWeight:"500",color:"#260275",marginBottom:"15px"}}>CREATE AN ACCOUNT </p> 
         <h2 className='title' style={{ textAlign:"center",margin:"0px",marginBottom:"20px",color:"#260275",color:"#ff0e7d",fontWeight:"400",fontSize:"24px"}}>
-          Welcome, Register and please specify if you are a teacher or a student. </h2> 
+          Welcome, Register below and please specify if you are a teacher or a student. </h2> 
  
           <Field
           name='email'

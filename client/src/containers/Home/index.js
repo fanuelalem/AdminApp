@@ -107,9 +107,11 @@ console.log(this.props,'sdlcksmdc')
  <h1 className='title' style={{color:"white",fontSize:"80px",paddingLeft:"15px",margin:"0px"}}>LEARNING MADE <br></br>  EASY</h1>
  <div style={{paddingLeft:"15px",paddingTop:"10px"}}>
  <p className='title' style={{fontSize:"18px",color:"white",lineHeight:"1.8",fontWeight:"300"}}>
-   Improve your Skills by joining our Easy to use Online 
- Platform and learn about English, Math, and any subject and prepare you 
- for the future.</p>
+  an educational online platform built for the convenience of Teachers as well as students. 
+  Students can expand their knowledge on subjects of their interest 
+  and Teachers can create curriculums for their students and review their progress.
+
+  </p>
 
  
  </div>
@@ -133,7 +135,7 @@ console.log(this.props,'sdlcksmdc')
         <Segment vertical='none' style={{width:"400px"}}>
         <p className='title' style={{ textAlign:"center",margin:"0px",fontSize:"18px",fontWeight:"500",color:"#260275",marginBottom:"15px"}}>CREATE AN ACCOUNT </p> 
         <h2 className='title' style={{ textAlign:"center",margin:"0px",marginBottom:"20px",color:"#260275",color:"#ff0e7d",fontWeight:"400",fontSize:"24px"}}>
-          Welcome, Register below and please specify if you are a teacher or a student. </h2> 
+          Welcome, Register below and specify if you are a teacher or a student. </h2> 
  
           <Field
           name='email'
